@@ -155,7 +155,6 @@ already:
                 mov dl,13
                 mov ah,02
                 int 21h
-            print 'Thank You....'
             mov ah,00
             mov al,03
             int 10h
@@ -164,7 +163,7 @@ admin:
             mov dl,10
             mov ah,02h
             int 21h
-            print 'Enter Master password:::'
+            print 'Enter password:::' ;The user must enter their password
             mov cx,04                  
             mov bl,10
             mov dx,00       ;loop to get master password
